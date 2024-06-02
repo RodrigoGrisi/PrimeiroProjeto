@@ -1,25 +1,23 @@
 ﻿using System;
+using System.Globalization;
 
 namespace PrimeiroProjeto {
     internal class Program {
         static void Main(string[] args) {
-            Console.WriteLine("First backend desenvolviment");
 
-            sbyte x = 100;
-            Console.WriteLine(x);
+            string[] vet = Console.ReadLine().Split(",");
 
-            //RETORNA O VALOR 0 - POR CONTA DO OVERFLOW
-            byte n1 = 255;
-            n1++;
-            Console.WriteLine(n1);  
-            
-            int n2 = -126;
-            Console.WriteLine(n2);
-            Console.WriteLine(  );
+            for (int i = 0; i < vet.Length; i++)
+            {
+                vet[i] = vet[i].Trim(); 
+            }
+
+            string p1 = vet[0]; // NOME 
+            string p2 = vet[1]; // IDADE 
+            string p3 = vet[2]; // PROFISSÃO 
+            string p4 = vet[3]; // ATRIBUIÇÃO
+
+            Console.WriteLine($"O funcionario {p1} tem { p2 } e atua como {p3} - {p4} ");
         }
     }
 }
-
-//IDENTAÇÃO AUTOMATICA CTRL+K+D
-//EXECUTAR CODIGO CTRL+F5
-// DUPLICAR LINE CTRL+D
