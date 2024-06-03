@@ -33,11 +33,11 @@ namespace PrimeiroProjeto {
 
             if (areaX > areaY)
             {
-                Console.WriteLine("Maior área: X");
-            } else
-                Console.WriteLine("Maior área: Y");
+                Console.WriteLine("Maior área: X", areaX);
+            }
+            else
             {
-
+                Console.WriteLine("Maior área: Y", areaY);
             }
 
         }
