@@ -5,7 +5,7 @@ namespace PrimeiroProjeto {
     internal class Program {
         static void Main(string[] args) {
 
-            Triangulo x, y;
+            /* Triangulo x, y;
 
             x = new Triangulo();
             y = new Triangulo();
@@ -38,7 +38,34 @@ namespace PrimeiroProjeto {
             else
             {
                 Console.WriteLine("Maior área: Y", areaY);
+            } 
+            */
+
+            Pessoa person1, person2;
+
+            person1 = new Pessoa();
+            person2 = new Pessoa();
+
+            Console.WriteLine("Digite o seu nome: ");
+            person1.nome = Console.ReadLine();
+            Console.WriteLine("Digite sua idade:");
+            person1.idade = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o seu nome: ");
+            person2.nome = Console.ReadLine();
+            Console.WriteLine("Digite sua idade:");
+            person2.idade = int.Parse(Console.ReadLine());
+
+            if (person1.idade > person2.idade)
+            {
+                Console.WriteLine($"Pessoa mais velha: {person1.nome}");
             }
+            else
+            {
+                Console.WriteLine($"Pessoa mais velha: {person2.nome}");
+            }
+
+            Console.WriteLine($"seja bem vindos (a) {person1.nome} e {person2.nome}");
 
         }
 
